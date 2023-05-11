@@ -403,6 +403,62 @@
 
 
         </div>
+        <style>
+            .modal-lg {
+                width: 740px;
+            }
+
+            .modal-head h3 {
+                font-size: 26px;
+                margin-bottom: 0px;
+                border-bottom: 1px solid #d0d0d0;
+                padding-bottom: 15px;
+            }
+
+            .modal-head {
+                padding: 15px;
+            }
+
+            .modal-content {
+                box-shadow: none;
+                border: none;
+                padding: 0px 15px;
+            }
+
+
+
+            .modal-content h4 {
+                font-size: 15px;
+                font-weight: 600;
+                border-bottom: 1px solid #d0d0d0;
+                padding-bottom: 15px;
+            }
+
+            .modal-content h4 span {
+                font-weight: 700;
+            }
+
+            button.modal-btn-inner {
+                background-color: #0f5ef7;
+                padding: 5px 25px;
+                border-radius: 5px;
+                border: none;
+                outline: none;
+                display: inline-block;
+                margin: 10px 0px;
+                margin-left: 15px;
+                color: #fff;
+                font-size: 15px;
+                float: right;
+            }
+
+            @media screen and (max-width:768px) {
+                .modal-lg {
+                    width: 400px;
+                }
+
+            }
+        </style>
         <div class="main-cont-wrapper">
             <div class="container-fluid">
                 <div class="row">
@@ -410,7 +466,8 @@
                         <div class="inner-pg-cont">
                             <div class="inner-container">
                                 <h2 class="main-head">View Past <span>Appointment</span></h2>
-                                <div class="calender-main">
+                                <!-- <div class="calender-main">
+
                                     <div class="calender-year">
                                         <strong class="clndr-yr">2009</strong>
                                         <div class="calneder-inner-cont">
@@ -1156,9 +1213,46 @@
                                             </table>
                                         </div>
                                     </div>
+                                </div> -->
+                                <!-- Large modal -->
+                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                    data-target=".bd-example-modal-lg">Large modal</button>
+
+                                <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+                                    aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="inner_detail">
+                                                <div class="modal-head">
+                                                    <h3>
+                                                        Advance Details
+                                                    </h3>
+                                                </div>
+                                                <div class="modal-content">
+                                                    <div class="row">
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                            <h4>Patient Name : <span>Sikandar ghulam Hussain</span>
+                                                            </h4>
+                                                            <h4>Session Behavior : <span>At Clinic</span></h4>
+                                                            <h4>Ticket No : <span>007</span></h4>
+                                                            <h4>Gender : <span>Male</span></h4>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                            <h4>Doctor Name : <span>Sikandar ghulam Hussain</span>
+                                                            </h4>
+                                                            <h4>Appointment Session : <span>1:00 - 1:30</span></h4>
+                                                            <h4>Appointment Date : <span>72-72-2072</span></h4>
+                                                            <h4>Booke Date : <span>72-72-2072</span></h4>
+                                                        </div>
+                                                        <button class="modal-btn-inner  " type="button">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="inner-container">
+                            <!-- <div class="inner-container">
                                 <h2 class="sub-head">Favourite <span>Doctors</span></h2>
                                 <div class="dr-carousel">
                                     <div class="owl-carousel" id="fvrt-dr">
@@ -1193,7 +1287,7 @@
 
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
 
                         </div>
                     </div>

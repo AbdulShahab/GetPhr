@@ -258,82 +258,278 @@
 		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	<![endif]-->
     <!-- Start Left menu area -->
-    <div id="layoutSidenav_nav">
-        <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
-            <div class="sb-sidenav-menu">
-                <div class="nav">
-                    <div class="sb-sidenav-menu-heading">Core</div>
-                    <a class="nav-link" href="index.html">
-                        <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                        Dashboard
-                    </a>
-                    <div class="sb-sidenav-menu-heading">Interface</div>
-                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts"
-                        aria-expanded="false" aria-controls="collapseLayouts">
-                        <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                        Layouts
-                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                    </a>
-                    <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne"
-                        data-bs-parent="#sidenavAccordion">
-                        <nav class="sb-sidenav-menu-nested nav">
-                            <a class="nav-link" href="layout-static.html">Static Navigation</a>
-                            <a class="nav-link" href="layout-sidenav-light.html">Light Sidenav</a>
-                        </nav>
-                    </div>
-                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages"
-                        aria-expanded="false" aria-controls="collapsePages">
-                        <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
-                        Pages
-                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                    </a>
-                    <div class="collapse" id="collapsePages" aria-labelledby="headingTwo"
-                        data-bs-parent="#sidenavAccordion">
-                        <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
-                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
-                                data-bs-target="#pagesCollapseAuth" aria-expanded="false"
-                                aria-controls="pagesCollapseAuth">
-                                Authentication
-                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                            </a>
-                            <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne"
-                                data-bs-parent="#sidenavAccordionPages">
-                                <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="login.html">Login</a>
-                                    <a class="nav-link" href="register.html">Register</a>
-                                    <a class="nav-link" href="password.html">Forgot Password</a>
-                                </nav>
-                            </div>
-                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
-                                data-bs-target="#pagesCollapseError" aria-expanded="false"
-                                aria-controls="pagesCollapseError">
-                                Error
-                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                            </a>
-                            <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne"
-                                data-bs-parent="#sidenavAccordionPages">
-                                <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="401.html">401 Page</a>
-                                    <a class="nav-link" href="404.html">404 Page</a>
-                                    <a class="nav-link" href="500.html">500 Page</a>
-                                </nav>
-                            </div>
-                        </nav>
-                    </div>
-                    <div class="sb-sidenav-menu-heading">Addons</div>
-                    <a class="nav-link" href="charts.html">
-                        <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
-                        Charts
-                    </a>
-                    <a class="nav-link" href="tables.html">
-                        <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                        Tables
+    <div class="left-sidebar-pro">
+        <nav id="sidebar" class="">
+
+            <div class="tabs-nav col">
+                <div class="sidebar-hdr-left">
+                    <a class="main-logo-link" href="index.html">
+                        <img class="main-logo" src="images/main-logo.png" alt="">
                     </a>
                 </div>
+                <nav>
+                    <a class="side-bar-anchor-selected"><img src="images/sidebar-icon-1.png" alt=""></a>
+                    <a class="side-bar-anchor-selected"><img src="images/sidebar-icons (2).png" alt=""></a>
+                    <a class="side-bar-anchor-selected" style="position: relative;"><img
+                            src="images/sidebar-icons (1).png" alt="">
+                        <span class="badge badge-primary"><i class="fa fa-bell">3</i></span></a>
+                    <a class="side-bar-anchor-selected"><img src="images/sidebar-icons (2).png" alt=""></a>
+                    <a class="side-bar-anchor-selected"><img src="images/sidebar-icons (3).png" alt=""></a>
+                </nav>
             </div>
-            <div class="sb-sidenav-footer">
-                <div class="small">Logged in as:</div>
-                Start Bootstrap
+            <div class="tabs tabs-content col">
+                <h2 class="pg-title">Dashboard</h2>
+                <div class="content">
+                    <div class="inner-nav">
+
+                        <div class="notification-head">
+                            <strong>Notifications</strong>
+                            <h6>Show all <span>143</span></h6>
+                        </div>
+                        <ul class="nav-list">
+                            <li class="active-noti">
+                                <h6>Make homepage</h6>
+                                <h5>Otundo Crm</h5>
+                            </li>
+                            <li class="active-noti">
+                                <h6>Problem with fixed header</h6>
+                                <h5>Coca Juice Website</h5>
+                            </li>
+                            <li>
+                                <h6>Fix Safari bug catalogue vi...</h6>
+                                <h5>Coca Juice Website</h5>
+                            </li>
+                            <li>
+                                <h6>Create UI Kit for layout</h6>
+                                <h5>Otundo Crm</h5>
+                            </li>
+                            <li>
+                                <h6>Develop map for site</h6>
+                                <h5>Crypto Project</h5>
+                            </li>
+                        </ul>
+                        <a href="#" class="patient-list-btn"><i class="fa fa-plus" aria-hidden="true"></i> Create New
+                            Patient List</a>
+                    </div>
+                    <div class="sidebar-patient-records">
+                        <h6>Advanced Patient Health Records</h6>
+                        <h5>BY DEVOPPIA</h5>
+                        <span class="record-chrt">
+                            <img src="images/side-bar-chart.png">
+                            <ul class="record-chart-labels">
+                                <li>GMB Vault</li>
+                                <li>Trading Company</li>
+                                <li>Other</li>
+                            </ul>
+                        </span>
+                    </div>
+                    <div class="helpdesk-cont">
+                        <img src="images/sidebar-img.png">
+                        <p>It will help us to avoid misspell and silly
+                            errors since code is run through</p>
+                        <a href="#"><i class="fa fa-paper-plane" aria-hidden="true"></i> Helpdesk</a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="inner-nav">
+                        <div class="notification-head">
+                            <strong>Notifications</strong>
+                            <h6>Show all <span>143</span></h6>
+                        </div>
+                        <ul class="nav-list">
+                            <li class="active-noti">
+                                <h6>Make homepage</h6>
+                                <h5>Otundo Crm</h5>
+                            </li>
+                            <li class="active-noti">
+                                <h6>Problem with fixed header</h6>
+                                <h5>Coca Juice Website</h5>
+                            </li>
+                            <li>
+                                <h6>Fix Safari bug catalogue vi...</h6>
+                                <h5>Coca Juice Website</h5>
+                            </li>
+                            <li>
+                                <h6>Create UI Kit for layout</h6>
+                                <h5>Otundo Crm</h5>
+                            </li>
+                            <li>
+                                <h6>Develop map for site</h6>
+                                <h5>Crypto Project</h5>
+                            </li>
+                        </ul>
+                        <a href="#" class="patient-list-btn"><i class="fa fa-plus" aria-hidden="true"></i> Create New
+                            Patient List</a>
+                    </div>
+                    <div class="sidebar-patient-records">
+                        <h6>Advanced Patient Health Records</h6>
+                        <h5>BY DEVOPPIA</h5>
+                        <span class="record-chrt">
+                            <img src="images/side-bar-chart.png">
+                            <ul class="record-chart-labels">
+                                <li>GMB Vault</li>
+                                <li>Trading Company</li>
+                                <li>Other</li>
+                            </ul>
+                        </span>
+                    </div>
+                    <div class="helpdesk-cont">
+                        <img src="images/sidebar-img.png">
+                        <p>It will help us to avoid misspell and silly
+                            errors since code is run through</p>
+                        <a href="#"><i class="fa fa-paper-plane" aria-hidden="true"></i> Helpdesk</a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="inner-nav">
+                        <div class="notification-head">
+                            <strong>Notifications</strong>
+                            <h6>Show all <span>143</span></h6>
+                        </div>
+                        <ul class="nav-list">
+                            <li class="active-noti">
+                                <h6>Make homepage</h6>
+                                <h5>Otundo Crm</h5>
+                            </li>
+                            <li class="active-noti">
+                                <h6>Problem with fixed header</h6>
+                                <h5>Coca Juice Website</h5>
+                            </li>
+                            <li>
+                                <h6>Fix Safari bug catalogue vi...</h6>
+                                <h5>Coca Juice Website</h5>
+                            </li>
+                            <li>
+                                <h6>Create UI Kit for layout</h6>
+                                <h5>Otundo Crm</h5>
+                            </li>
+                            <li>
+                                <h6>Develop map for site</h6>
+                                <h5>Crypto Project</h5>
+                            </li>
+                        </ul>
+                        <a href="#" class="patient-list-btn"><i class="fa fa-plus" aria-hidden="true"></i> Create New
+                            Patient List</a>
+                    </div>
+                    <div class="sidebar-patient-records">
+                        <h6>Advanced Patient Health Records</h6>
+                        <h5>BY DEVOPPIA</h5>
+                        <span class="record-chrt">
+                            <img src="images/side-bar-chart.png">
+                            <ul class="record-chart-labels">
+                                <li>GMB Vault</li>
+                                <li>Trading Company</li>
+                                <li>Other</li>
+                            </ul>
+                        </span>
+                    </div>
+                    <div class="helpdesk-cont">
+                        <img src="images/sidebar-img.png">
+                        <p>It will help us to avoid misspell and silly
+                            errors since code is run through</p>
+                        <a href="#"><i class="fa fa-paper-plane" aria-hidden="true"></i> Helpdesk</a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="inner-nav">
+                        <div class="notification-head">
+                            <strong>Notifications</strong>
+                            <h6>Show all <span>143</span></h6>
+                        </div>
+                        <ul class="nav-list">
+                            <li class="active-noti">
+                                <h6>Make homepage</h6>
+                                <h5>Otundo Crm</h5>
+                            </li>
+                            <li class="active-noti">
+                                <h6>Problem with fixed header</h6>
+                                <h5>Coca Juice Website</h5>
+                            </li>
+                            <li>
+                                <h6>Fix Safari bug catalogue vi...</h6>
+                                <h5>Coca Juice Website</h5>
+                            </li>
+                            <li>
+                                <h6>Create UI Kit for layout</h6>
+                                <h5>Otundo Crm</h5>
+                            </li>
+                            <li>
+                                <h6>Develop map for site</h6>
+                                <h5>Crypto Project</h5>
+                            </li>
+                        </ul>
+                        <a href="#" class="patient-list-btn"><i class="fa fa-plus" aria-hidden="true"></i> Create New
+                            Patient List</a>
+                    </div>
+                    <div class="sidebar-patient-records">
+                        <h6>Advanced Patient Health Records</h6>
+                        <h5>BY DEVOPPIA</h5>
+                        <span class="record-chrt">
+                            <img src="images/side-bar-chart.png">
+                            <ul class="record-chart-labels">
+                                <li>GMB Vault</li>
+                                <li>Trading Company</li>
+                                <li>Other</li>
+                            </ul>
+                        </span>
+                    </div>
+                    <div class="helpdesk-cont">
+                        <img src="images/sidebar-img.png">
+                        <p>It will help us to avoid misspell and silly
+                            errors since code is run through</p>
+                        <a href="#"><i class="fa fa-paper-plane" aria-hidden="true"></i> Helpdesk</a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="inner-nav">
+                        <div class="notification-head">
+                            <strong>Notifications</strong>
+                            <h6>Show all <span>143</span></h6>
+                        </div>
+                        <ul class="nav-list">
+                            <li class="active-noti">
+                                <h6>Make homepage</h6>
+                                <h5>Otundo Crm</h5>
+                            </li>
+                            <li class="active-noti">
+                                <h6>Problem with fixed header</h6>
+                                <h5>Coca Juice Website</h5>
+                            </li>
+                            <li>
+                                <h6>Fix Safari bug catalogue vi...</h6>
+                                <h5>Coca Juice Website</h5>
+                            </li>
+                            <li>
+                                <h6>Create UI Kit for layout</h6>
+                                <h5>Otundo Crm</h5>
+                            </li>
+                            <li>
+                                <h6>Develop map for site</h6>
+                                <h5>Crypto Project</h5>
+                            </li>
+                        </ul>
+                        <a href="#" class="patient-list-btn"><i class="fa fa-plus" aria-hidden="true"></i> Create New
+                            Patient List</a>
+                    </div>
+                    <div class="sidebar-patient-records">
+                        <h6>Advanced Patient Health Records</h6>
+                        <h5>BY DEVOPPIA</h5>
+                        <span class="record-chrt">
+                            <img src="images/side-bar-chart.png">
+                            <ul class="record-chart-labels">
+                                <li>GMB Vault</li>
+                                <li>Trading Company</li>
+                                <li>Other</li>
+                            </ul>
+                        </span>
+                    </div>
+                    <div class="helpdesk-cont">
+                        <img src="images/sidebar-img.png">
+                        <p>It will help us to avoid misspell and silly
+                            errors since code is run through</p>
+                        <a href="#"><i class="fa fa-paper-plane" aria-hidden="true"></i> Helpdesk</a>
+                    </div>
+                </div>
             </div>
         </nav>
     </div>
@@ -353,17 +549,17 @@
             <div class="header-top-area">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding-left: 0px;">
                             <div class="header-top-wraper">
                                 <div class="row">
 
-                                    <div class="col-lg-8 col-md-7 col-sm-6 col-xs-12">
+                                    <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
                                         <form role="search" class="search-form">
                                             <input type="text" placeholder="Search..." class="search-int form-control">
 
                                         </form>
                                     </div>
-                                    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                    <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
                                         <div class="user-tab">
                                             <img src="images/user-img-2.png">
                                             <p>
@@ -373,7 +569,7 @@
                                             <i class="fa fa-angle-down" aria-hidden="true"></i>
                                         </div>
                                     </div>
-                                    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                    <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 user-tab-02">
                                         <div class="user-tab">
                                             <img src="images/user-img-2.png">
                                             <p>
@@ -382,6 +578,10 @@
                                             </p>
                                             <i class="fa fa-angle-down" aria-hidden="true"></i>
                                         </div>
+                                    </div>
+                                    <div class="toggle-btn-side-menu">
+                                        <span><i class="fa fa-bars" onclick="side_toggle_menu()" aria-hidden="true"></i>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
@@ -389,7 +589,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
         <div class="main-cont-wrapper">
             <div class="container-fluid">
@@ -402,6 +601,34 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="js/carousel-main.js"></script>
+    <script>
+        function side_toggle_menu() {
+            $('.left-sidebar-pro').toggle(500);
+        }
+    </script>
+    <script>
+        $(function () {
+            $('nav .side-bar-anchor-selected').on('click', function () {
+                $('.triangle-container').remove();
+                show_content($(this).index());
+            });
+
+            show_content(0);
+
+            function show_content(index) {
+                // Make the content visible
+                $('.tabs .content.visible').removeClass('visible');
+                $('.tabs .content:nth-of-type(' + (index + 1) + ')').addClass('visible');
+
+                // Set the tab to selected
+                $('nav .side-bar-anchor-selected.selected').removeClass('selected');
+                $('nav .side-bar-anchor-selected:nth-of-type(' + (index + 1) + ')').addClass('selected');
+                // Add arrow
+                $('nav .side-bar-anchor-selected.selected').append("");
+                // How to remove the arrow and only show it on the selected tab?
+            }
+        })(jQuery);
+    </script>
     <!-- jquery
 		============================================ -->
     <script src="js/vendor/jquery-1.12.4.min.js"></script>

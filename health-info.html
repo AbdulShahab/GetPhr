@@ -80,28 +80,29 @@
 	<![endif]-->
     <!-- Start Left menu area -->
     <div class="left-sidebar-pro">
-        <div class="sidebar-header">
-            <div class="sidebar-hdr-left">
-                <a href="index.html"><img class="main-logo" src="images/main-logo.png" alt=""></a>
-            </div>
-            <div class="sidebar-hdr-rght">
-                <h2 class="pg-title">Dashboard</h2>
-            </div>
-        </div>
         <nav id="sidebar" class="">
+
             <div class="tabs-nav col">
+                <div class="sidebar-hdr-left">
+                    <a class="main-logo-link" href="index.html">
+                        <img class="main-logo" src="images/main-logo.png" alt="">
+                    </a>
+                </div>
                 <nav>
-                    <a><img src="images/sidebar-icon-1.png" alt=""></a>
-                    <a><img src="images/sidebar-icons (2).png" alt=""></a>
-                    <a style="position: relative;"><img src="images/sidebar-icons (1).png" alt="">
+                    <a class="side-bar-anchor-selected"><img src="images/sidebar-icon-1.png" alt=""></a>
+                    <a class="side-bar-anchor-selected"><img src="images/sidebar-icons (2).png" alt=""></a>
+                    <a class="side-bar-anchor-selected" style="position: relative;"><img
+                            src="images/sidebar-icons (1).png" alt="">
                         <span class="badge badge-primary"><i class="fa fa-bell">3</i></span></a>
-                    <a><img src="images/sidebar-icons (2).png" alt=""></a>
-                    <a><img src="images/sidebar-icons (3).png" alt=""></a>
+                    <a class="side-bar-anchor-selected"><img src="images/sidebar-icons (2).png" alt=""></a>
+                    <a class="side-bar-anchor-selected"><img src="images/sidebar-icons (3).png" alt=""></a>
                 </nav>
             </div>
             <div class="tabs tabs-content col">
+                <h2 class="pg-title">Dashboard</h2>
                 <div class="content">
                     <div class="inner-nav">
+
                         <div class="notification-head">
                             <strong>Notifications</strong>
                             <h6>Show all <span>143</span></h6>
@@ -1285,7 +1286,7 @@
     </script>
     <script>
         $(function () {
-            $('nav a').on('click', function () {
+            $('nav .side-bar-anchor-selected').on('click', function () {
                 $('.triangle-container').remove();
                 show_content($(this).index());
             });
@@ -1298,16 +1299,13 @@
                 $('.tabs .content:nth-of-type(' + (index + 1) + ')').addClass('visible');
 
                 // Set the tab to selected
-                $('nav a.selected').removeClass('selected');
-                $('nav a:nth-of-type(' + (index + 1) + ')').addClass('selected');
+                $('nav .side-bar-anchor-selected.selected').removeClass('selected');
+                $('nav .side-bar-anchor-selected:nth-of-type(' + (index + 1) + ')').addClass('selected');
                 // Add arrow
-                $('nav a.selected').append("");
+                $('nav .side-bar-anchor-selected.selected').append("");
                 // How to remove the arrow and only show it on the selected tab?
             }
         })(jQuery);
-
-
-
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
